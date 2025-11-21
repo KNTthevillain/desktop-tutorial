@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job/Internship Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .application-form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 700px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+        fieldset {
+            border: 1px solid #ddd;
+            margin-bottom: 25px;
+            border-radius: 6px;
+        }
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #0056b3;
+            padding: 0 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            margin-top: 15px;
+            font-weight: 600;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        input[type="file"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+        }
+        button[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1em;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        button[type="submit"]:hover {
+            background-color: #1e7e34;
+        }
+    </style>
+</head>
+<body>
+    #
+        <h1>Job/Internship Details and Application</h1>
+
+        <!-- Organization Details -->
+        <fieldset>
+            <legend>🏢 Organization & Project Details (For Posting)</legend>
+            <label for="org-name">Organization Name:</label>
+            <input type="text" id="org-name" name="organization-name" required>
+
+            <label for="project-details">Project Details:</label>
+            <textarea id="project-details" name="project-details"></textarea>
+
+            <label for="job-role">Job Role:</label>
+            <input type="text" id="job-role" name="job-role" required>
+
+            <label for="vacancies">Number of Vacancies:</label>
+            <input type="number" id="vacancies" name="number-of-vacancies" min="1" required>
+
+            <label for="required-skills">Required Skills (Comma Separated):</label>
+            <input type="text" id="required-skills" name="required-skills" required>
+
+            <label for="job-location">Job Location:</label>
+            <input type="text" id="job-location" name="job-location" required>
+
+            <label for="work-mode">Mode of Work:</label>
+            <select id="work-mode" name="mode-of-work">
+                <option value="remote">Remote</option>
+                <option value="hybrid">Hybrid</option>
+                <option value="onsite">On-site</option>
+            </select>
+
+            <label for="duration">Internship Duration (e.g., 6 months):</label>
+            <input type="text" id="duration" name="internship-duration">
+
+            <label for="min-cgpa">Minimum CGPA Cut-off:</label>
+            <input type="number" id="min-cgpa" name="minimum-cgpa" step="0.01" min="0" max="10" required>
+
+            <label for="deadline">Application Deadline:</label>
+            <input type="date" id="deadline" name="application-deadline" required>
+
+            <label for="contact-person">Organization Contact Person:</label>
+            <input type="text" id="contact-person" name="organization-contact-person">
+        </fieldset>
+
+        <!-- Student Details -->
+        <fieldset>
+            <legend>👨‍🎓 Student's Application Details (For Applicant)</legend>
+            <label for="student-name">Student Name:</label>
+            <input type="text" id="student-name" name="student-name" required>
+
+            <label for="college-id">College ID:</label>
+            <input type="text" id="college-id" name="college-id" required>
+
+            <label for="student-branch">Branch:</label>
+            <input type="text" id="student-branch" name="student-branch" required>
+
+            <label for="student-cgpa">Current CGPA (out of 10):</label>
+            <input type="number" id="student-cgpa" name="student-cgpa" step="0.01" min="0" max="10" required>
+
+            <label for="skills-certs">Skills and Certificates:</label>
+            <textarea id="skills-certs" name="skills-and-certificates" placeholder="List relevant skills and certifications..."></textarea>
+
+            <label for="domains">Preferred Domains:</label>
+            <input type="text" id="domains" name="preferred-domains" placeholder="e.g., AI/ML, Web Development, Cloud">
+
+            <label for="location">Current Location:</label>
+            <input type="text" id="location" name="location">
+
+            <label for="pan-card">Pan Card Number:</label>
